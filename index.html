@@ -7,14 +7,13 @@
     <title>Document</title>
     <script>
 		function ku_ku(elem){
-			elem.src = 'http://old.code.mu/exercises/javascript/dom/osnovy-raboty-s-dom-v-javascript/2/3/2.jpg';
-		}
-        function uk_uk(elem){
-			elem.src = 'http://old.code.mu/exercises/javascript/dom/osnovy-raboty-s-dom-v-javascript/2/3/1.jpg';
+			elem = document.getElementById('test');
+			elem.style.color = 'orange';
 		}
 	</script>
 </head>
 <body>
-	<img src="http://old.code.mu/exercises/javascript/dom/osnovy-raboty-s-dom-v-javascript/2/3/1.jpg" width="150" id="test" onmouseover="ku_ku(this)" onmouseout="uk_uk(this)"><br>
+	<input type="text" value="Ку-ку" id="test">
+	<button onclick="ku_ku()">Нажми на меня!</button>
 </body>
 </html>
