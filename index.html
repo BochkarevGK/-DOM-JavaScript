@@ -5,19 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
-        function buttonClick() {
-	        var input1 = document.getElementById('input1');
-	        var input2 = document.getElementById('input2');
-	        var input1Value = input1.value;
-	        var input2Value = input2.value;
-	        input1.value = input2Value;
-	        input2.value = input1Value;
+        function buttonClick(elem) {
+	        elem.value = 'Новый текст кнопки';
         }
     </script>
     <title>Document</title>
 </head>
 <body>
-    <button onclick="buttonClick()">Нажми на меня</button>
-    <input type="text" id="input1" value="!!!"><input type="text" id="input2" value="???">
+    <input type="button" onclick="buttonClick(this)" value="Нажми на меня">
 </body>
 </html>
