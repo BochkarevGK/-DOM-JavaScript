@@ -7,13 +7,15 @@
     <script>
         function buttonClick() {
 	    var input = document.getElementById('input');
-	    alert(input.value);
+	    var number = Number(input.value);
+	    var square = number*number;
+	    alert(square);
         }
     </script>
     <title>Document</title>
 </head>
 <body>
     <button onclick="buttonClick()">Нажми на меня</button>
-<input type="text" id="input" value="???">
+    <input type="text" id="input" placeholder="Введите число!">
 </body>
 </html>
