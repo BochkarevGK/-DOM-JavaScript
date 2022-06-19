@@ -7,11 +7,14 @@
     <title>Document</title>
     <script>
 		function ku_ku(elem){
-			elem.value = parseInt(elem.value) + 1;
+			elem = document.getElementById('test');
+			elem.value = 'Теперь я плаваю справа!';
+			elem.style.cssFloat = 'right';
 		}
 	</script>
 </head>
 <body>
-	<input type="submit" onclick="ku_ku(this)" value="0">
+	<input type="text" value="Ку-ку" id="test">
+	<button onclick="ku_ku()">Нажми на меня!</button>
 </body>
 </html>
