@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+		input[type="text"] {
+			width: 400px;
+		}
+	</style>
     <script>
 		function ku_ku(elem){
 			elem = document.getElementById('test');
-			elem.value = 'Теперь я плаваю справа!';
-			elem.style.cssFloat = 'right';
+			elem.value = 'Мои css классы: '+elem.className;
 		}
 	</script>
 </head>
 <body>
-	<input type="text" value="Ку-ку" id="test">
+	<input type="text" value="Ку-ку" id="test" class="eee www ddd">
 	<button onclick="ku_ku()">Нажми на меня!</button>
 </body>
 </html>
