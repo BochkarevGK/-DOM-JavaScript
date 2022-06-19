@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-		function ku_ku(){
-			elem = document.getElementById('test');
-			elem.src = 'http://old.code.mu/exercises/javascript/dom/osnovy-raboty-s-dom-v-javascript/2/3/2.jpg';
+		function ku_ku(elem){
+			alert(elem.value);
 		}
 	</script>
 </head>
 <body>
-	<img src="http://old.code.mu/exercises/javascript/dom/osnovy-raboty-s-dom-v-javascript/2/3/1.jpg" width="150" id="test"><br>
-	<button onclick="ku_ku()">Нажми на меня!</button>
+	<input type="text" value="Нажми на меня!" onfocus="ku_ku(this)">
 </body>
 </html>
