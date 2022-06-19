@@ -7,17 +7,26 @@
     <title>Document</title>
     <script>
 		function ku_ku(elem){
-			elem = document.getElementById('test');
-			elem.value = 'Ой, я поменял свой текст и css!';
-			elem.style.width = '200px';
-			elem.style.height = '50px';
-			elem.style.color = 'orange';
-			elem.style.borderRadius = '15px';
+			var block = document.getElementById('block');
+			var unblock = document.getElementById('unblock');
+			block.value = 'Оп, теперь на меня больше не нажать!';
+			block.disabled = true;
+			unblock.style.display = 'block';
+		}
+        function uk_uk(){
+			var block = document.getElementById('block');
+			var unblock = document.getElementById('unblock');
+			block.value = 'Оп, на меня снова можно нажимать!';
+			block.disabled = false;
+			unblock.style.display = 'none';
 		}
 	</script>
 </head>
 <body>
-	<input type="text" value="Ку-ку" id="test"> <br><br>
-	<button onclick="ku_ku()">Нажми на меня!</button>
+	<p>
+		Это input type="submit".
+	</p>
+	<input type="submit" onclick="ku_ku(this)" value="Нажми на меня!" id="block">
+	<input type="submit" onclick="uk_uk('button')" value="Нажми чтобы отблокировать элемент" style="display: none;" id="unblock">
 </body>
 </html>
