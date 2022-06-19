@@ -7,26 +7,11 @@
     <title>Document</title>
     <script>
 		function ku_ku(elem){
-			var block = document.getElementById('block');
-			var unblock = document.getElementById('unblock');
-			block.value = 'Оп, теперь на меня больше не нажать!';
-			block.disabled = true;
-			unblock.style.display = 'block';
-		}
-        function uk_uk(){
-			var block = document.getElementById('block');
-			var unblock = document.getElementById('unblock');
-			block.value = 'Оп, на меня снова можно нажимать!';
-			block.disabled = false;
-			unblock.style.display = 'none';
+			elem.value = parseInt(elem.value) + 1;
 		}
 	</script>
 </head>
 <body>
-	<p>
-		Это input type="submit".
-	</p>
-	<input type="submit" onclick="ku_ku(this)" value="Нажми на меня!" id="block">
-	<input type="submit" onclick="uk_uk('button')" value="Нажми чтобы отблокировать элемент" style="display: none;" id="unblock">
+	<input type="submit" onclick="ku_ku(this)" value="0">
 </body>
 </html>
