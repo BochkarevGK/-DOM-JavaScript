@@ -7,15 +7,14 @@
     <title>Document</title>
     <script>
 		function ku_ku(elem){
-			elem.value = 'Оп, теперь на меня больше не нажать!';
-			elem.disabled = true;
+			elem.src = 'http://old.code.mu/exercises/javascript/dom/osnovy-raboty-s-dom-v-javascript/2/3/2.jpg';
+		}
+        function uk_uk(elem){
+			elem.src = 'http://old.code.mu/exercises/javascript/dom/osnovy-raboty-s-dom-v-javascript/2/3/1.jpg';
 		}
 	</script>
 </head>
 <body>
-	<p>
-		Это input type="submit".
-	</p>
-	<input type="submit" onclick="ku_ku(this)" value="Нажми на меня!">
+	<img src="http://old.code.mu/exercises/javascript/dom/osnovy-raboty-s-dom-v-javascript/2/3/1.jpg" width="150" id="test" onmouseover="ku_ku(this)" onmouseout="uk_uk(this)"><br>
 </body>
 </html>
