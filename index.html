@@ -12,20 +12,12 @@
 	</style>
     <script>
 		function ku_ku(elem){
-			var test = document.getElementById('test');
-			var value = test.value;
-			if(!isNaN(value)){
-				var result = document.getElementById('result');
-				result.value =  value*value;
-			} else {
-				alert('Введено не число!')
-			}
+			elem.disabled = true;
+			elem.style.cursor = 'not-allowed';
 		}
 	</script>
 </head>
 <body>
-	<input type="text" value="" placeholder="Введите число!" id="test"><br><br>
-	<input id = "result" value = "Здесь появится результат." disabled><br><br>
-	<button onclick="ku_ku()">Нажми на меня!</button>
+	<input type="submit" onclick="ku_ku(this)" value="Нажми на меня!">
 </body>
 </html>
