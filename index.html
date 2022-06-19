@@ -9,9 +9,12 @@
 		function ku_ku(elem){
 			elem.value = 'Ой, я поменял текст!';
 		}
+        function uk_uk(elem){
+			elem.value = 'Ой, а теперь еще раз поменял!';
+		}
 	</script>
 </head>
 <body>
-	<input type="text" value="Нажми на меня!" onfocus="ku_ku(this)">
+	<input type="text" value="Нажми на меня!" onfocus="ku_ku(this)" onblur="uk_uk(this)">
 </body>
 </html>
