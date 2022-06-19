@@ -12,17 +12,16 @@
 	</style>
     <script>
 		function ku_ku(elem){
-			var test1 = document.getElementById('test1');
-			var test2 = document.getElementById('test2');
-			var tmp = test1.value;
-			test1.value = test2.value;
-			test2.value = tmp;
+			var test = document.getElementById('test');
+			var value = test.value;
+			var result = document.getElementById('result');
+			result.value =  value*value;
 		}
 	</script>
 </head>
 <body>
-	<input type="text" value="Привет!" id="test1">
-	<input type="text" value="Пока!" id="test2">
+	<input type="text" value="" placeholder="Введите число!" id="test">
+	<input id = "result" value = "Здесь появится результат." disabled>
 	<button onclick="ku_ku()">Нажми на меня!</button>
 </body>
 </html>
