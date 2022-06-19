@@ -11,13 +11,29 @@
 		}
 	</style>
     <script>
-		function ku_ku(elem){
-			elem.disabled = true;
-			elem.style.cursor = 'not-allowed';
+		function ku_ku(text){
+			var input = document.getElementById('input');
+			input.value = input.value + text;
 		}
 	</script>
 </head>
 <body>
-	<input type="submit" onclick="ku_ku(this)" value="Нажми на меня!">
+	<input type="text" value="" id="input">
+	<br><br>
+	<input type="submit" onclick="ku_ku('+')" value="Я добавлю +"><br>
+	<input type="submit" onclick="ku_ku('-')" value="Я добавлю -"><br>
+	<input type="submit" onclick="ku_ku('/')" value="Я добавлю /"><br>
+	<input type="submit" onclick="ku_ku('*')" value="Я добавлю *"><br>
+	<br><br>
+	<input type="submit" onclick="ku_ku('1')" value="1"><br>
+	<input type="submit" onclick="ku_ku('2')" value="2"><br>
+	<input type="submit" onclick="ku_ku('3')" value="3"><br>
+	<input type="submit" onclick="ku_ku('4')" value="4"><br>
+	<input type="submit" onclick="ku_ku('5')" value="5"><br>
+	<input type="submit" onclick="ku_ku('6')" value="6"><br>
+	<input type="submit" onclick="ku_ku('7')" value="7"><br>
+	<input type="submit" onclick="ku_ku('8')" value="8"><br>
+	<input type="submit" onclick="ku_ku('9')" value="9"><br>
+	<input type="submit" onclick="ku_ku('0')" value="0"><br>
 </body>
 </html>
