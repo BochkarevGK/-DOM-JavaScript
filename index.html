@@ -8,12 +8,17 @@
     <script>
 		function ku_ku(elem){
 			elem = document.getElementById('test');
-			elem.style.color = 'orange';
+			elem.style.display = 'none';
+		}
+        function uk_uk(){
+			elem = document.getElementById('test');
+			elem.style.display = 'inline-block';
 		}
 	</script>
 </head>
 <body>
 	<input type="text" value="Ку-ку" id="test">
 	<button onclick="ku_ku()">Нажми на меня!</button>
+	<button onclick="uk_uk()">Нажми потом на меня!</button>
 </body>
 </html>
